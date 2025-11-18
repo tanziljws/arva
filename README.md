@@ -1,3 +1,39 @@
+# ARVA - SMK Negeri 4 Bogor Website
+
+Website resmi SMK Negeri 4 Bogor dengan fitur Gallery, News, Agenda, dan Admin Panel.
+
+## 🚀 Setup
+
+### Database Configuration
+Database sudah dikonfigurasi untuk Railway MySQL:
+- Host: `centerbeam.proxy.rlwy.net`
+- Port: `25505`
+- Database: `railway`
+- Username: `root`
+
+Konfigurasi ada di file `.env`
+
+### Import Database
+Untuk mengimpor database, jalankan:
+```bash
+php import-database.php
+```
+
+### Git Auto-Push
+Repository sudah dikonfigurasi dengan:
+- **Auto-push hook**: Setiap commit akan otomatis di-push ke GitHub
+- **Helper script**: Gunakan `./git-push.sh "commit message"` untuk add, commit, dan push sekaligus
+
+## 📝 Features
+
+- **Gallery System**: Upload, kategori, komentar, dan like
+- **News Management**: CRUD berita dengan kategori
+- **Agenda/Events**: Manajemen acara sekolah
+- **Contact Form**: Form kontak untuk pengunjung
+- **Admin Panel**: Dashboard untuk mengelola konten
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
