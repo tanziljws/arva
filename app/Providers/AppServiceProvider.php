@@ -22,5 +22,10 @@ class AppServiceProvider extends ServiceProvider
 {
     // Gunakan Bootstrap 5 untuk pagination
     Paginator::useBootstrapFive();
+    
+    // Force HTTPS when APP_FORCE_HTTPS is true (default: true)
+    if (config('app.force_https', true)) {
+        \URL::forceScheme('https');
+    }
 }
 }

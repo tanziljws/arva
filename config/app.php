@@ -61,6 +61,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Force HTTPS
+    |--------------------------------------------------------------------------
+    |
+    | When this option is enabled, Laravel will force all URLs to use HTTPS.
+    | This is useful when your application is behind a proxy or load balancer.
+    |
+    */
+
+    'force_https' => env('APP_FORCE_HTTPS', true),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
